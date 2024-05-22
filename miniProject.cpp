@@ -23,7 +23,7 @@ class Book{
     }
  
    void displayBooks(){
-      for(int i = 0 ; i <= bookCount ; i++){
+      for(int i = 0 ; i <= bookCount - 1 ; i++){
         cout<<i+1<<" "<<book[i]<<endl;
       }
       cout << "" << endl;
@@ -147,7 +147,7 @@ void Admin :: addBook(Book& b){
       string replaceBook;
       cout<<"Enter Name of book you want to add"<<endl;
       cin>>replaceBook;
-      b.book[bookCount - 1] = replaceBook;
+      b.book[bookCount] = replaceBook;
       bookCount++ ;
       cout<<"Book Sucessfully Added"<<endl;
      }
